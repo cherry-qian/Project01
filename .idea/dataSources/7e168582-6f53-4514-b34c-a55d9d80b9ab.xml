@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="crm32"/>
+    <schema id="3" parent="1" name="day12"/>
+    <schema id="4" parent="1" name="day17"/>
+    <schema id="5" parent="1" name="demo"/>
+    <schema id="6" parent="1" name="eova"/>
+    <schema id="7" parent="1" name="g5"/>
+    <schema id="8" parent="1" name="hibernate32"/>
+    <schema id="9" parent="1" name="information_schema"/>
+    <schema id="10" parent="1" name="mydb"/>
+    <schema id="11" parent="1" name="mysql"/>
+    <schema id="12" parent="1" name="s1"/>
+    <schema id="13" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="14" parent="1" name="tx_erp"/>
+    <schema id="15" parent="1" name="yiibaidb"/>
+    <table id="16" parent="13" name="aa"/>
+    <table id="17" parent="13" name="bb"/>
+    <table id="18" parent="13" name="s_menu"/>
+    <table id="19" parent="13" name="s_model"/>
+    <table id="20" parent="13" name="s_user"/>
+    <column id="21" parent="16" name="A1">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="16" name="A2">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="23" parent="16" name="A3">
+      <Position>3</Position>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="24" parent="17" name="A1">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="17" name="B2">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="26" parent="17" name="B3">
+      <Position>3</Position>
+      <DataType>INT(10)|4</DataType>
+    </column>
+    <column id="27" parent="18" name="fCode">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="18" name="fName">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="29" parent="18" name="fIsDetail">
+      <Position>3</Position>
+      <DataType>SMALLINT(5)|5</DataType>
+    </column>
+    <column id="30" parent="18" name="fLevel">
+      <Position>4</Position>
+      <DataType>SMALLINT(5)|5</DataType>
+    </column>
+    <column id="31" parent="18" name="fParent">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="32" parent="18" name="fModel">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="33" parent="18" name="fImgPath">
+      <Position>7</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="34" parent="18" name="fDesc">
+      <Position>8</Position>
+      <DataType>VARCHAR(4000)|12</DataType>
+    </column>
+    <column id="35" parent="18" name="fPostCode">
+      <Position>9</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="36" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>fCode</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="37" parent="19" name="fCode">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="38" parent="19" name="fName">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="39" parent="19" name="fIsDetail">
+      <Position>3</Position>
+      <DataType>SMALLINT(5)|5</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="40" parent="19" name="fLevel">
+      <Position>4</Position>
+      <DataType>SMALLINT(5)|5</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="41" parent="19" name="fParent">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="42" parent="19" name="fModel">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="43" parent="19" name="fStartPara">
+      <Position>7</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="44" parent="19" name="fStartType">
+      <Position>8</Position>
+      <Comment>0 非模态 1 模态 2 最大化</Comment>
+      <DataType>SMALLINT(5)|5</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="45" parent="19" name="fIsAdmin">
+      <Position>9</Position>
+      <Comment>=1 允许Admin使用</Comment>
+      <DataType>SMALLINT(5)|5</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="46" parent="19" name="fObjName">
+      <Position>10</Position>
+      <Comment>模块所处理的对象名称</Comment>
+      <DataType>VARCHAR(255)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="47" parent="19" name="fIsMenu">
+      <Position>11</Position>
+      <DataType>SMALLINT(5)|5</DataType>
+    </column>
+    <key id="48" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>fCode</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="49" parent="20" name="fCode">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="50" parent="20" name="fLoginCode">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="51" parent="20" name="fName">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="52" parent="20" name="fJp">
+      <Position>4</Position>
+      <DataType>VARCHAR(50)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="53" parent="20" name="fDeptCode">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="54" parent="20" name="fPassword">
+      <Position>6</Position>
+      <Comment>加密保存</Comment>
+      <DataType>VARCHAR(50)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="55" parent="20" name="fIsStop">
+      <Position>7</Position>
+      <DataType>SMALLINT(5)|5</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="56" parent="20" name="fDataRange">
+      <Position>8</Position>
+      <Comment>可查阅数据的范围（存放顶级部门代码）</Comment>
+      <DataType>VARCHAR(255)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="57" parent="20" name="fOrgCode">
+      <Position>9</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="58" parent="20" name="fkey">
+      <Position>10</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="59" parent="20" name="fPhoto">
+      <Position>11</Position>
+      <DataType>LONGBLOB(max)|-4</DataType>
+    </column>
+    <column id="60" parent="20" name="fPhotoBig">
+      <Position>12</Position>
+      <DataType>LONGBLOB(max)|-4</DataType>
+    </column>
+    <column id="61" parent="20" name="fHeadURL">
+      <Position>13</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="62" parent="20" name="fSex">
+      <Position>14</Position>
+      <DataType>VARCHAR(50)|12</DataType>
+    </column>
+    <key id="63" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>fCode</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
